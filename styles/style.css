@@ -131,36 +131,8 @@
     color:#727272;
 }
 
-@media screen and (max-width: 576px){
-    .navbar, .nav-links, .team{
-        flex-direction: column;
-        max-width: 350px;
 
-    }
-    
-    .brand{
-        color: #131313;
-        font-size: 1.9rem;
-        font-weight: 500;
-        font-family: "Work Sans", sans-serif;
-    }
-    .brand-title{
-        font-size: 2rem;
-        font-weight: 600;
-        max-width: 350px;
-        font-family: "Work Sans", sans-serif;
-    }
-    .brand-subtitle{
-        font-size: .8rem;
-        font-weight: 200;
-        max-width: 380px;
-        font-family: "Work Sans", sans-serif;
-    }
-    .img-container{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-    }
-}   .features{
+  .features{
         margin-left: 20px;
 }
 .fact-card{
@@ -199,4 +171,67 @@
     color:#727272;
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
+}
+.sponsor{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companies img{
+    filter:grayscale(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .navbar, .nav-links, .team{
+        flex-direction: column;
+        max-width: 350px;
+
+    }
+    main{
+        max-height: 380px;
+    }
+    
+    .brand{
+        color: #131313;
+        font-size: 1.9rem;
+        font-weight: 500;
+        font-family: "Work Sans", sans-serif;
+    }
+    .brand-title{
+        font-size: 2rem;
+        font-weight: 600;
+        max-width: 350px;
+        font-family: "Work Sans", sans-serif;
+    }
+    .brand-subtitle{
+        font-size: .8rem;
+        font-weight: 200;
+        max-width: 380px;
+        font-family: "Work Sans", sans-serif;
+    }
+    .img-container, .fact-element, .sponsor-companies{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .fact-element, .sponsor-companies{
+        justify-items: center;
+        gap: 20px;
+    }
 }
